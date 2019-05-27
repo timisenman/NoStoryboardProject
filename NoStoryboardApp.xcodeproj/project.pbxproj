@@ -9,19 +9,38 @@
 /* Begin PBXBuildFile section */
 		F89AF7DA229982B900FCF196 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89AF7D9229982B900FCF196 /* AppDelegate.swift */; };
 		F89AF7DC229982B900FCF196 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89AF7DB229982B900FCF196 /* ViewController.swift */; };
-		F89AF7DF229982B900FCF196 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F89AF7DD229982B900FCF196 /* Main.storyboard */; };
 		F89AF7E1229982BF00FCF196 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F89AF7E0229982BF00FCF196 /* Assets.xcassets */; };
 		F89AF7E4229982BF00FCF196 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F89AF7E2229982BF00FCF196 /* LaunchScreen.storyboard */; };
+		F89AF808229A109A00FCF196 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89AF804229A104E00FCF196 /* SnapKit.framework */; };
+		F89AF80B229B77A100FCF196 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89AF80A229B77A100FCF196 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F89AF803229A104E00FCF196 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F89AF7FE229A104E00FCF196 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9D819CC627D0083B827;
+			remoteInfo = SnapKit;
+		};
+		F89AF805229A104E00FCF196 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F89AF7FE229A104E00FCF196 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9E219CC627E0083B827;
+			remoteInfo = "SnapKit Tests";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F89AF7D6229982B900FCF196 /* NoStoryboardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoStoryboardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89AF7D9229982B900FCF196 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F89AF7DB229982B900FCF196 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F89AF7DE229982B900FCF196 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F89AF7E0229982BF00FCF196 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F89AF7E3229982BF00FCF196 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F89AF7E5229982BF00FCF196 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F89AF7FE229A104E00FCF196 /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = ../SnapKit/SnapKit.xcodeproj; sourceTree = "<group>"; };
+		F89AF80A229B77A100FCF196 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F89AF808229A109A00FCF196 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +58,10 @@
 		F89AF7CD229982B900FCF196 = {
 			isa = PBXGroup;
 			children = (
+				F89AF7FE229A104E00FCF196 /* SnapKit.xcodeproj */,
 				F89AF7D8229982B900FCF196 /* NoStoryboardApp */,
 				F89AF7D7229982B900FCF196 /* Products */,
+				F89AF807229A109A00FCF196 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +78,28 @@
 			children = (
 				F89AF7D9229982B900FCF196 /* AppDelegate.swift */,
 				F89AF7DB229982B900FCF196 /* ViewController.swift */,
-				F89AF7DD229982B900FCF196 /* Main.storyboard */,
+				F89AF80A229B77A100FCF196 /* SecondViewController.swift */,
 				F89AF7E0229982BF00FCF196 /* Assets.xcassets */,
 				F89AF7E2229982BF00FCF196 /* LaunchScreen.storyboard */,
 				F89AF7E5229982BF00FCF196 /* Info.plist */,
 			);
 			path = NoStoryboardApp;
+			sourceTree = "<group>";
+		};
+		F89AF7FF229A104E00FCF196 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F89AF804229A104E00FCF196 /* SnapKit.framework */,
+				F89AF806229A104E00FCF196 /* SnapKit Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F89AF807229A109A00FCF196 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,12 +148,35 @@
 			mainGroup = F89AF7CD229982B900FCF196;
 			productRefGroup = F89AF7D7229982B900FCF196 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F89AF7FF229A104E00FCF196 /* Products */;
+					ProjectRef = F89AF7FE229A104E00FCF196 /* SnapKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F89AF7D5229982B900FCF196 /* NoStoryboardApp */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F89AF804229A104E00FCF196 /* SnapKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SnapKit.framework;
+			remoteRef = F89AF803229A104E00FCF196 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F89AF806229A104E00FCF196 /* SnapKit Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SnapKit Tests.xctest";
+			remoteRef = F89AF805229A104E00FCF196 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F89AF7D4229982B900FCF196 /* Resources */ = {
@@ -124,7 +185,6 @@
 			files = (
 				F89AF7E4229982BF00FCF196 /* LaunchScreen.storyboard in Resources */,
 				F89AF7E1229982BF00FCF196 /* Assets.xcassets in Resources */,
-				F89AF7DF229982B900FCF196 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F89AF80B229B77A100FCF196 /* SecondViewController.swift in Sources */,
 				F89AF7DC229982B900FCF196 /* ViewController.swift in Sources */,
 				F89AF7DA229982B900FCF196 /* AppDelegate.swift in Sources */,
 			);
@@ -143,14 +204,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F89AF7DD229982B900FCF196 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F89AF7DE229982B900FCF196 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F89AF7E2229982BF00FCF196 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
